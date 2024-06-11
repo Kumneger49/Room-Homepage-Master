@@ -1,0 +1,321 @@
+
+
+*{
+  --image: "images\\desktop-image-hero-1.jpg",
+  --header: `Discover innovative ways to decorate`,
+  --description: `
+  We provide unmatched quality, comfort, and style for property owners
+  across the country. Our experts combine form and function in bringing
+  your vision to life. Create a room in your own style with our
+  collection and make your property a reflection of you and what you
+  love.
+  `
+}
+
+body {
+  background-color: rgb(34, 32, 32);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  /* background-color: blue; */
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 50px;
+}
+
+.navbar-container {
+  width: 80%;
+  /* margin-top: 50px; */
+  /* background-color: rgb(255, 0, 140); */
+  display: flex;
+  align-items: center;
+  transition: all .3s ease;
+}
+
+.close-toggler,
+.open-toggler {
+  font-size: 3rem;
+  font-weight: 700;
+  position: absolute;
+  left: 30px;
+  top: 35px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-brand {
+  font: 500 1.6rem sans-serif;
+  /* margin-right: 15px; */
+}
+
+.nav-item {
+  font: 600 0.8rem sans-serif;
+  text-transform: lowercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-item::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: white;
+  bottom: -15px;
+  transition: all 0.3s;
+}
+
+.nav-item:hover::before {
+  width: 100%;
+}
+
+.first-container {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 2%;
+  /* background-color: blue; */
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 550px; */
+}
+
+.image {
+  width: 55%;
+  min-width: 400px;
+  height: 550px;
+  background-image: url("images\\desktop-image-hero-1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* padding-top: 30px;
+  padding-left: 30px; */
+  /* background-size: 100% 100%; */
+}
+
+
+.second-image {
+  background-image:  url("images\\desktop-image-hero-2.jpg");
+}
+
+.third-image {
+  background-image:  url("images\\desktop-image-hero-3.jpg");
+}
+
+.description {
+  background-color: white;
+  width: 45%;
+  min-width: 400px;
+  line-height: 1.3;
+
+  /* display: flex;
+  flex-direction: column;
+ justify-content: center; */
+  /* padding: 150px 70px; */
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-container {
+  width: 70%;
+  padding: 50px 10px;
+ 
+  /* background-color: yellow; */
+}
+
+.description-header {
+  /* background-color: blue; */
+  font: 700 3rem sans-serif;
+  margin-bottom: 20px;
+}
+
+.shop-now {
+  font: 600 0.8rem sans-serif;
+  letter-spacing: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.paginate-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 170px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 3rem;
+  background-color: black;
+  color: white;
+}
+
+.back-button {
+  width: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-button {
+  width: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-button:hover,
+.back-button:hover {
+  background-color: grey;
+}
+
+@media screen and (max-width: 1145px) {
+  .image,
+  .description {
+    width: 100%;
+  }
+
+  .paginate-button {
+    left: 58%;
+    top: -80px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .navbar-container {
+    background-color: white;
+    color: black;
+    width: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    /* transform: translateY(-10px); */
+    left: 0;
+    /* visibility: hidden;  */
+    transform: translateY(-130%);
+  }
+
+  .nav-item::before {
+    background-color: black;
+  }
+
+  .open-toggler {
+    visibility: visible; 
+  }
+
+  .show-sidebar {
+    transform: translateY(-10%);
+  }
+
+  .show-element {
+    visibility: visible;
+    
+  }
+
+  .hide-element {
+    visibility: hidden;
+  }
+
+  .nav-list {
+    /* background-color: blue; */
+    margin: 10px 0 0 50px;
+  }
+
+  .nav-brand {
+    /* background-color: purple; */
+    margin-inline: 50%;
+  }
+}
+
+
+/*  BELOW SECTION STYLING */
+
+
+.below-container {
+  width: 80%;
+  /* min-width: 400px; */
+ 
+  margin-inline: auto;
+  /* background-color: purple; */
+  /* padding: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.below-first-image{
+  background-image: url("images\\image-about-dark.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 30%;
+  min-width: 250px;
+  /* min-width: ; */
+  height: 300px;
+}
+
+.below-second-image {
+  background-image: url( "images\\image-about-light.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 30%;
+  min-width: 250px;
+  height: 300px;
+}
+
+.below-text {
+  width: 40%;
+  min-width: 250px;
+  height: 300px;
+  background-color: white;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.below-text-container {
+  /* background-color: greenyellow; */
+  max-width: 80%;
+  line-height: 1.3;
+}
+
+.below-text-header {
+  margin-bottom: 15px;
+  font: 900 .9rem sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1100px) {
+  .below-first-image, .below-second-image, .below-text {
+    width: 100%;
+    min-width: 400px;
+  }
+}
+
