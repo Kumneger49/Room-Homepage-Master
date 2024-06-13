@@ -13,7 +13,7 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
  
   - [Continued development](#continued-development)
  
-- [Author](#author)
+- [Author](#Kumneger)
 - [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
@@ -30,8 +30,8 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL:  (https://kumneger49.github.io/Room-Homepage-Master/)
+- Live Site URL:  (https://github.com/Kumneger49/Room-Homepage-Master)
 
  
 
@@ -51,9 +51,9 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website -  (https://kumneger49.github.io/Kumneger49/)
+- Frontend Mentor -  (https://github.com/Kumneger49)
+ 
 
  
 
