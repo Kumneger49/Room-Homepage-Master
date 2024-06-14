@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -31,7 +37,7 @@
         <div class="navbar">
           <div class="nav-brand">room</div>
           <div class="navbar-container">
-            <div class="close-toggler">x</div>
+            <div class="close-toggler"><img src="images\icon-close.svg" alt=""></div>
             <ul class="nav-list">
               <li class="nav-item">Home</li>
               <li class="nav-item">Shop</li>
@@ -39,7 +45,7 @@
               <li class="nav-item">Contact</li>
             </ul>
           </div>
-          <div class="open-toggler">=</div>
+          <div class="open-toggler"> <img src="images\icon-hamburger.svg" alt=""></div>
         </div>
       </div>
       <div class="description">
@@ -56,11 +62,11 @@
             you love.
           </div>
 
-          <div class="shop-now">Shop now</div>
+          <div class="shop-now">Shop now <img style="opacity: .5; margin-left: 5px;" src="images\icon-arrow.svg" alt=""></div>
 
           <div class="paginate-button">
-            <div class="back-button">-</div>
-            <div class="front-button">+</div>
+            <div class="back-button"><img src="images\icon-angle-left.svg" alt=""></div>
+            <div class="front-button"><img src="images\icon-angle-right.svg" alt=""> </div>
           </div>
         </div>
       </div>
@@ -139,19 +145,15 @@
         descriptionHeader.textContent = paginationObject[index].header;
         descriptionPassage.textContent = paginationObject[index].description;
         //image.style.backgroundImage=url("images\\desktop-image-hero-2.jpg");
-        if(index===1){
+        if (index === 1) {
           image.classList.remove("second-image");
-          image.classList.remove("third-image")
-        }
-        else if (index === 2) {
+          image.classList.remove("third-image");
+        } else if (index === 2) {
           image.classList.add("second-image");
-          image.classList.remove("third-image")
-        }
-
-        else if(index==3){
+          image.classList.remove("third-image");
+        } else if (index == 3) {
           image.classList.add("third-image");
         }
-         
       }
 
       function changeToBack() {
@@ -162,23 +164,18 @@
         descriptionHeader.textContent = paginationObject[index].header;
         descriptionPassage.textContent = paginationObject[index].description;
         //image.style.backgroundImage=paginationObject[index].image;
-        if(index===1){
+        if (index === 1) {
           image.classList.remove("second-image");
-          image.classList.remove("third-image")
-        }
-        else if (index === 2) {
+          image.classList.remove("third-image");
+        } else if (index === 2) {
           image.classList.add("second-image");
-          image.classList.remove("third-image")
-        }
-
-        else if(index==3){
+          image.classList.remove("third-image");
+        } else if (index == 3) {
           image.classList.add("third-image");
         }
- 
       }
-
     </script>
-
+    <script src="https://kit.fontawesome.com/6853abf759.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>
